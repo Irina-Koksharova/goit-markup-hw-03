@@ -20,10 +20,21 @@ a {
   text-decoration: none;
 }
 
-li {
+ul {
   list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
 }
 
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
 /* Шапка сайта */
 .logo-header {
   font-family: Raleway, sans-serif;
@@ -61,15 +72,20 @@ li {
 }
 
 /* Герой */
+.hero {
+  background-color: var(--secondary-dakrgrey-color);
+  text-align: center;
+}
 .hero-title {
   color: var(--primary-white-color);
-  background: var(--secondary-dakrgrey-color);
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 46px;
 }
 .hero-button {
   color: var(--primary-white-color);
@@ -77,13 +93,23 @@ li {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: none;
 }
 
 /* Наши преимущества */
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .benefits-title {
   color: var(--primary-white-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .benefits-subtitle {
   color: var(--secondary-black-color);
@@ -91,15 +117,26 @@ li {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.benefits-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Чем мы занимаемся */
+.directions {
+  padding-bottom: 113px;
+}
 .directions-title {
   color: var(--secondary-black-color);
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 .directions-subtitle {
   color: var(--primary-white-color);
@@ -109,11 +146,17 @@ li {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* Наша команда */
 .team {
   background: var(--secondary-lightgrey-color);
+  padding-top: 75px;
+  padding-bottom: 113px;
 }
 .team-title {
   color: var(--secondary-black-color);
@@ -121,6 +164,8 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 .team-subtitle {
   color: var(--secondary-black-color);
@@ -128,6 +173,8 @@ li {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .social-link {
   color: var(--primary-grey-color);
@@ -137,18 +184,35 @@ li {
 }
 .team-text {
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
 /* Наши клиенты */
+.section-clients {
+  padding-top: 75px;
+  padding-bottom: 94px;
+}
 .clients {
   color: var(--secondary-black-color);
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 /* Наши работы */
+.section-examples {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .examples {
   color: var(--primary-white-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.filter {
+  margin-bottom: 50px;
 }
 .button {
   color: var(--secondary-black-color);
@@ -157,6 +221,10 @@ li {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  padding: 6px 22px;
+  min-width: 73px;
+  border: none;
+  border-radius: 4px;
 }
 .button:hover {
   color: var(--primary-white-color);
@@ -171,6 +239,9 @@ li {
   background: var(--accent-blue-color);
   font-size: 18px;
   line-height: 1.56;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 63px 24 px;
 }
 .examples-title {
   color: var(--secondary-black-color);
@@ -178,17 +249,23 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 .example-button {
   color: var(--primary-grey-color);
   font-size: 16px;
   line-height: 1.88;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 /* Футер */
 .footer {
   color: var(--primary-white-color);
   background: var(--secondary-dakrgrey-color);
+  padding-top: 48px;
+  padding-bottom: 21px;
 }
 .adress {
   font-style: normal;
