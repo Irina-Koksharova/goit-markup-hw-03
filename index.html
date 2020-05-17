@@ -18,31 +18,35 @@
   <body>
     <!--Шапка сайта-->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container flex">
+        <nav class="flex">
           <a href="./" class="logo-header"
             ><span class="logo-parth-one">Web</span
             ><span class="logo-parth-two"> Studio</span></a
           >
           <ul class="logo-nav">
-            <li><a href="./index.html" class="page-current">Студия</a></li>
-            <li><a href="./portfolio.html" class="page">Портфолио</a></li>
-            <li><a href="" class="page">Контакты</a></li>
+            <li class="logo-nav-item">
+              <a href="./index.html" class="page current">Студия</a>
+            </li>
+            <li class="logo-nav-item">
+              <a href="./portfolio.html" class="page">Портфолио</a>
+            </li>
+            <li class="logo-nav-item"><a href="" class="page">Контакты</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="container">
-        <ul class="logo-nav">
-          <li>
+        <ul class="logo-nav right">
+          <li class="logo-nav-item">
             <img src="./images/mailto.svg" alt="Почта компании" />
-            <a href="mailto:info@devstudio.com" class="contact"
+            <a href="mailto:info@devstudio.com" class="contact page"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="logo-nav-item">
             <img src="./images/telephone.svg" alt="Телефон компании" />
-            <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="contact page"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -64,10 +68,14 @@
       <section class="benefits">
         <div class="container">
           <h2 class="benefits-title">Наши преимущества</h2>
-          <ul>
-            <li>
+          <ul class="benefits-flex">
+            <li class="benefits-box">
               <a href="" class="benefits-link">
-                <img src="./images/foto-one-one.svg" alt="Антена" />
+                <img
+                  src="./images/foto-one-one.svg"
+                  alt="Антена"
+                  class="block"
+                />
               </a>
               <h3 class="benefits-subtitle">Внимание к деталям</h3>
               <p class="benefits-text">
@@ -76,9 +84,9 @@
               </p>
             </li>
 
-            <li>
+            <li class="benefits-box">
               <a href="" class="benefits-link">
-                <img src="./images/foto-one-two.svg" alt="Часы" />
+                <img src="./images/foto-one-two.svg" alt="Часы" class="block" />
               </a>
               <h3 class="benefits-subtitle">Пунктуальность</h3>
               <p class="benefits-text">
@@ -87,9 +95,13 @@
               </p>
             </li>
 
-            <li>
+            <li class="benefits-box">
               <a href="" class="benefits-link">
-                <img src="./images/foto-one-three.svg" alt="Компьютер" />
+                <img
+                  src="./images/foto-one-three.svg"
+                  alt="Компьютер"
+                  class="block"
+                />
               </a>
               <h3 class="benefits-subtitle">Планирование</h3>
               <p class="benefits-text">
@@ -98,9 +110,13 @@
               </p>
             </li>
 
-            <li>
+            <li class="benefits-box">
               <a href="" class="benefits-link">
-                <img src="./images/foto-one-four.svg" alt="Космонавт" />
+                <img
+                  src="./images/foto-one-four.svg"
+                  alt="Космонавт"
+                  class="block"
+                />
               </a>
               <h3 class="benefits-subtitle">Современные технологии</h3>
               <p class="benefits-text">
@@ -116,13 +132,14 @@
       <section class="directions">
         <div class="container">
           <h2 class="directions-title">Чем мы занимаемся</h2>
-          <ul>
+          <ul class="direction-flex">
             <li class="directions-item">
               <img
                 src="./images/foto-two-one.png"
                 alt="Ноутбук"
                 width="380"
                 height="294"
+                class="items"
               />
               <h3 class="directions-subtitle">Десктопные приложения</h3>
             </li>
@@ -133,6 +150,7 @@
                 alt="Мобильный телефон"
                 width="380"
                 height="294"
+                class="items"
               />
               <h3 class="directions-subtitle">Мобильные приложения</h3>
             </li>
@@ -143,6 +161,7 @@
                 alt="Монитор копьютера"
                 width="380"
                 height="294"
+                class="items"
               />
               <h3 class="directions-subtitle">Дизайнерские решения</h3>
             </li>
@@ -154,17 +173,18 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul>
-            <li>
+          <ul class="team-flex">
+            <li class="team-item">
               <img
                 src="./images/foto-three-one.jpg"
                 alt="John Smith"
                 width="278"
                 height="260"
+                class="items"
               />
               <h3 class="team-subtitle">John Smith</h3>
               <p class="team-text">Product Designer</p>
-              <ul>
+              <ul class="social-link">
                 <li>
                   <a
                     href=""
@@ -191,16 +211,17 @@
               </ul>
             </li>
 
-            <li>
+            <li class="team-item">
               <img
                 src="./images/foto-three-two.jpg"
                 alt="Marta Stewart"
                 width="278"
                 height="260"
+                class="items"
               />
               <h3 class="team-subtitle">Marta Stewart</h3>
               <p class="team-text">Frontend Developer</p>
-              <ul>
+              <ul class="social-link">
                 <li>
                   <a
                     href=""
@@ -227,16 +248,17 @@
               </ul>
             </li>
 
-            <li>
+            <li class="team-item">
               <img
                 src="./images/foto-three-three.jpg"
                 alt="Robert Jakis"
                 width="278"
                 height="260"
+                class="items"
               />
               <h3 class="team-subtitle">Robert Jakis</h3>
               <p class="team-text">Marketing</p>
-              <ul>
+              <ul class="social-link">
                 <li>
                   <a
                     href=""
@@ -263,16 +285,17 @@
               </ul>
             </li>
 
-            <li>
+            <li class="team-item">
               <img
                 src="./images/foto-three-four.jpg"
                 alt="Martin Doe"
                 width="278"
                 height="260"
+                class="items"
               />
               <h3 class="team-subtitle">Martin Doe</h3>
               <p class="team-text">UI Designer</p>
-              <ul>
+              <ul class="social-link">
                 <li>
                   <a
                     href=""
@@ -306,43 +329,64 @@
       <section class="section-clients">
         <div class="container">
           <h2 class="clients">Постоянные клиенты</h2>
-          <ul>
-            <li>
-              <a href="">
-                <img src="./images/foto-four-one.svg" alt="YA & CO" />
-              </a>
-            </li>
-
-            <li>
-              <a href="">
+          <ul class="clients-flex">
+            <li class="clients-item">
+              <a href="" class="link-item">
                 <img
-                  src="./images/foto-four-two.svg"
-                  alt="Company Tagline Here"
+                  src="./images/foto-four-one.svg"
+                  alt="YA & CO"
+                  class="link-item"
                 />
               </a>
             </li>
 
-            <li>
-              <a href="">
-                <img src="./images/foto-four-three.svg" alt="COMPANY" />
+            <li class="clients-item">
+              <a href="" class="link-item">
+                <img
+                  src="./images/foto-four-two.svg"
+                  alt="Company Tagline Here"
+                  class="link-item"
+                />
               </a>
             </li>
 
-            <li>
-              <a href="">
-                <img src="./images/foto-four-four.svg" alt="FOSTER PETERS" />
+            <li class="clients-item">
+              <a href="" class="link-item">
+                <img
+                  src="./images/foto-four-three.svg"
+                  alt="COMPANY"
+                  class="link-item"
+                />
               </a>
             </li>
 
-            <li>
-              <a href="">
-                <img src="./images/foto-four-five.svg" alt="BRAND" />
+            <li class="clients-item">
+              <a href="" class="link-item">
+                <img
+                  src="./images/foto-four-four.svg"
+                  alt="FOSTER PETERS"
+                  class="link-item"
+                />
               </a>
             </li>
 
-            <li>
-              <a href="">
-                <img src="./images/foto-four-six.svg" alt="Company TAGLINE" />
+            <li class="clients-item">
+              <a href="" class="link-item">
+                <img
+                  src="./images/foto-four-five.svg"
+                  alt="BRAND"
+                  class="link-item"
+                />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="" class="link-item">
+                <img
+                  src="./images/foto-four-six.svg"
+                  alt="Company TAGLINE"
+                  class="link-item"
+                />
               </a>
             </li>
           </ul>
