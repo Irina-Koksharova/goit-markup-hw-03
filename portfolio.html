@@ -18,33 +18,35 @@
   <body>
     <!--Шапка сайта-->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container flex">
+        <nav class="flex">
           <a href="./" class="logo-header"
             ><span class="logo-parth-one">Web</span
             ><span class="logo-parth-two"> Studio</span></a
           >
           <ul class="logo-nav">
-            <li><a href="./index.html" class="page">Студия</a></li>
-            <li>
-              <a href="./portfolio.html" class="page-current">Портфолио</a>
+            <li class="logo-nav-item">
+              <a href="./index.html" class="page">Студия</a>
             </li>
-            <li><a href="" class="page">Контакты</a></li>
+            <li class="logo-nav-item">
+              <a href="./portfolio.html" class="page current">Портфолио</a>
+            </li>
+            <li class="logo-nav-item"><a href="" class="page">Контакты</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="container">
-        <ul class="logo-nav">
-          <li>
+        <ul class="logo-nav right">
+          <li class="logo-nav-item">
             <img src="./images/mailto.svg" alt="Почта компании" />
-            <a href="mailto:info@devstudio.com" class="contact"
+            <a href="mailto:info@devstudio.com" class="contact page"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="logo-nav-item">
             <img src="./images/telephone.svg" alt="Телефон компании" />
-            <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="contact page"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -54,18 +56,26 @@
       <section class="section-examples">
         <div class="container">
           <h1 class="examples">Наши работы</h1>
-          <div class="filter">
-            <ul>
-              <li><button type="button" class="button">Все</button></li>
-              <li><button type="button" class="button">Веб-сайты</button></li>
-              <li><button type="button" class="button">Приложения</button></li>
-              <li><button type="button" class="button">Дизайн</button></li>
-              <li><button type="button" class="button">Маркетинг</button></li>
-            </ul>
-          </div>
+          <ul class="filter">
+            <li class="filter-item">
+              <button type="button" class="button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="button">Маркетинг</button>
+            </li>
+          </ul>
 
-          <ul>
-            <li>
+          <ul class="examples-flex">
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-one.jpg"
@@ -82,7 +92,7 @@
                 <p class="example-button">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-two.jpg"
@@ -101,7 +111,7 @@
                 <p class="example-button">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-three.jpg"
@@ -118,7 +128,7 @@
                 <p class="example-button">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-four.jpg"
@@ -135,7 +145,7 @@
                 <p class="example-button">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-five.jpg"
@@ -152,7 +162,7 @@
                 <p class="example-button">Приложение</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-six.jpg"
@@ -169,7 +179,7 @@
                 <p class="example-button">Веб-сайт</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-seven.jpg"
@@ -186,7 +196,7 @@
                 <p class="example-button">Дизайн</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-eight.jpg"
@@ -203,7 +213,7 @@
                 <p class="example-button">Маркетинг</p>
               </a>
             </li>
-            <li>
+            <li class="examples-item">
               <a href="">
                 <img
                   src="./images/portf-nine.jpg"
@@ -228,52 +238,56 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container">
-        <address class="adress">
-          <ul>
-            <li>
-              <a href="./" class="logo-footer"
-                ><span class="logo-parth-one">Web</span
-                ><span class="logo-parth-three"> Studio</span></a
-              >
-            </li>
-            <li>г. Киев, пр-т Леси Украинки, 26</li>
-            <li>
-              <a href="mailto:info@example.com" class="adress-link"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380991111111" class="adress-link"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer-flex">
+          <address class="adress">
+            <ul class="adress-block">
+              <li>
+                <a href="./" class="logo-footer block"
+                  ><span class="logo-parth-one">Web</span
+                  ><span class="logo-parth-three"> Studio</span></a
+                >
+              </li>
+              <li>г. Киев, пр-т Леси Украинки, 26</li>
+              <li>
+                <a href="mailto:info@example.com" class="adress-link block"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="adress-link block"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
 
-        <b class="invoke">присоединяйтесь</b>
+          <div class="direction-futter">
+            <b class="invoke">присоединяйтесь</b>
 
-        <ul>
-          <li>
-            <a href="" aria-label="Ссылка на Instagram" class="social-link"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="" aria-label="Ссылка на Twitter" class="social-link"
-              >Twitter</a
-            >
-          </li>
-          <li>
-            <a href="" aria-label="Ссылка на Facebook" class="social-link"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a href="" aria-label="Ссылка на LinkedIn" class="social-link"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
+            <ul class="footer-flex">
+              <li>
+                <a href="" aria-label="Ссылка на Instagram" class="social-link"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a href="" aria-label="Ссылка на Twitter" class="social-link"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a href="" aria-label="Ссылка на Facebook" class="social-link"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a href="" aria-label="Ссылка на LinkedIn" class="social-link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <p class="autor">2020| Developed by GoIT Students</p>
       </div>
