@@ -7,6 +7,9 @@
   --secondary-f-lightgrey-color: rgba(255, 255, 255, 0.6);
   --secondary-flightgrey-color: rgba(255, 255, 255, 0.4);
   --accent-blue-color: #2196f3;
+  --border-footer: rgba(255, 255, 255, 0.1);
+  --border-header: #ececec;
+  --footer-bgc: #2f303a;
 }
 
 body {
@@ -14,6 +17,10 @@ body {
   background: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+header {
+  border-bottom: 1px solid var(--border-header);
 }
 
 a {
@@ -28,12 +35,14 @@ ul {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid brown;
 }
+
 /* Шапка сайта */
 
 .flex {
@@ -43,7 +52,7 @@ ul {
 
 .logo-header {
   display: block;
-  margin-right: 86px;
+  margin-right: 85px;
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -63,7 +72,7 @@ ul {
 
 .logo-nav {
   display: flex;
-
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -73,7 +82,6 @@ ul {
 .logo-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-
 .page {
   color: var(--secondary-black-color);
   padding-top: 32px;
@@ -91,6 +99,9 @@ ul {
 
 .right {
   margin-left: auto;
+}
+.right > .logo-nav-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contact {
@@ -110,7 +121,7 @@ ul {
 
 .hero-title {
   margin-top: 0px;
-  margin-bottom: 46px;
+  margin-bottom: 30px;
 
   color: var(--primary-white-color);
   font-weight: 900;
@@ -142,6 +153,7 @@ ul {
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
+  border-bottom: 1px solid var(--border-header);
 }
 
 .benefits-title {
@@ -152,7 +164,7 @@ ul {
 }
 
 .benefits-box {
-  width: calc((100%-4 * 30) * 5);
+  width: calc((100%-3 * 30) / 4);
 }
 
 .benefits-box:not(:last-child) {
@@ -194,13 +206,13 @@ ul {
 
 /* Чем мы занимаемся */
 .directions {
-  padding-bottom: 113px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .directions-title {
   margin-top: 0px;
   margin-bottom: 50px;
-
   color: var(--secondary-black-color);
   text-align: center;
   font-weight: 700;
@@ -215,7 +227,9 @@ ul {
 .directions-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.directions-item {
+  width: calc((100%-2 * 30) / 3);
+}
 .items {
   display: block;
 }
@@ -238,8 +252,8 @@ ul {
 /* Наша команда */
 
 .team {
-  padding-top: 75px;
-  padding-bottom: 113px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   background: var(--secondary-lightgrey-color);
 }
@@ -261,6 +275,7 @@ ul {
 
 .team-item:not(:last-child) {
   margin-right: 30px;
+  width: calc((100%-3 * 30) / 4);
 }
 
 .team-subtitle {
@@ -293,7 +308,7 @@ ul {
 /* Наши клиенты */
 
 .section-clients {
-  padding-top: 75px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -314,6 +329,7 @@ ul {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
+  width: calc((100%-5 * 30) / 6);
 }
 
 .link-item {
@@ -323,7 +339,7 @@ ul {
 /* Наши работы */
 
 .section-examples {
-  padding-top: 94px;
+  padding-top: 93px;
   padding-bottom: 94px;
 }
 
@@ -345,18 +361,23 @@ ul {
 
 .examples-flex {
   display: flex;
-  width: 1200px;
   flex-wrap: wrap;
+  /* width: 1170px;
+  background-color: crimson; */
 }
 
 .examples-item {
-  /* width: calc((100%-2 * 30) * 3); */
+  /* display: block; */
+  width: calc((100%-2 * 30) / 3);
+  /* align-items: center;
   margin-right: 30px;
-}
+  outline: 1px solid blue;
+} */
 
-.examples-item:nth-child(3n) {
+/* .examples-item:nth-child(3n) {
   margin-right: 0px;
-}
+  background-color: darkgoldenrod;
+} */
 
 .filter-item .button {
   color: var(--secondary-black-color);
@@ -417,27 +438,8 @@ ul {
 .footer {
   padding-top: 48px;
   padding-bottom: 21px;
-
   color: var(--primary-white-color);
-  background: var(--secondary-dakrgrey-color);
-}
-
-.footer-flex {
-  display: flex;
-}
-
-.direction-futter {
-  flex-direction: column;
-}
-
-.adress {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.adress-block {
-  margin-right: 179px;
+  background: var(--footer-bgc);
 }
 
 .logo-footer {
@@ -446,23 +448,26 @@ ul {
   font-size: 22px;
   line-height: 1.18;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 .logo-parth-three {
   color: var(--primary-white-color);
 }
 
-.invoke {
-  font-weight: 700;
+.adress {
+  font-style: normal;
   font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 21px;
+  line-height: 1.71;
+  margin-bottom: 28px;
 }
 
-.footer-block {
-  display: block;
+.adress-block {
+  margin-right: 69px;
+}
+
+.adress-item {
+  margin-bottom: 9px;
 }
 
 .adress-link {
@@ -477,10 +482,33 @@ ul {
   color: var(--accent-blue-color);
 }
 
+.social-block {
+  margin-right: 94px;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: center;
+}
+
+.direction {
+  display: flex;
+}
+
+.invoke {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 21px;
+}
+
 .autor {
   margin-top: 0px;
   margin-bottom: 0px;
-
+  border-top: 1px solid var(--border-footer);
+  padding-top: 18px;
   color: var(--secondary-flightgrey-color);
   font-size: 12px;
   line-height: 2;

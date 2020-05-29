@@ -137,8 +137,9 @@
               <img
                 src="./images/foto-two-one.png"
                 alt="Ноутбук"
-                width="380"
-                height="294"
+                max
+                max
+                width="370px"
                 class="items"
               />
               <h3 class="directions-subtitle">Десктопные приложения</h3>
@@ -148,8 +149,7 @@
               <img
                 src="./images/foto-two-two.png"
                 alt="Мобильный телефон"
-                width="380"
-                height="294"
+                width="370px"
                 class="items"
               />
               <h3 class="directions-subtitle">Мобильные приложения</h3>
@@ -159,8 +159,7 @@
               <img
                 src="./images/foto-two-three.png"
                 alt="Монитор копьютера"
-                width="380"
-                height="294"
+                width="370px"
                 class="items"
               />
               <h3 class="directions-subtitle">Дизайнерские решения</h3>
@@ -178,8 +177,7 @@
               <img
                 src="./images/foto-three-one.jpg"
                 alt="John Smith"
-                width="278"
-                height="260"
+                width="270"
                 class="items"
               />
               <h3 class="team-subtitle">John Smith</h3>
@@ -215,8 +213,7 @@
               <img
                 src="./images/foto-three-two.jpg"
                 alt="Marta Stewart"
-                width="278"
-                height="260"
+                width="270"
                 class="items"
               />
               <h3 class="team-subtitle">Marta Stewart</h3>
@@ -252,8 +249,7 @@
               <img
                 src="./images/foto-three-three.jpg"
                 alt="Robert Jakis"
-                width="278"
-                height="260"
+                width="270"
                 class="items"
               />
               <h3 class="team-subtitle">Robert Jakis</h3>
@@ -289,8 +285,7 @@
               <img
                 src="./images/foto-three-four.jpg"
                 alt="Martin Doe"
-                width="278"
-                height="260"
+                width="270"
                 class="items"
               />
               <h3 class="team-subtitle">Martin Doe</h3>
@@ -398,32 +393,31 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          <address class="adress">
-            <ul class="adress-block">
-              <li>
-                <a href="./" class="logo-footer block"
-                  ><span class="logo-parth-one">Web</span
-                  ><span class="logo-parth-three"> Studio</span></a
-                >
-              </li>
-              <li>г. Киев, пр-т Леси Украинки, 26</li>
-              <li>
-                <a href="mailto:info@example.com" class="adress-link block"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380991111111" class="adress-link block"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+          <div class="adress-block">
+            <a href="./" class="logo-footer block"
+              ><span class="logo-parth-one">Web</span
+              ><span class="logo-parth-three"> Studio</span>
+            </a>
+            <address class="adress">
+              <ul>
+                <li class="adress-item">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="adress-item">
+                  <a href="mailto:info@example.com" class="adress-link block"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a href="tel:+380991111111" class="adress-link block"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
 
-          <div class="direction-futter">
+          <div class="social-block">
             <b class="invoke">присоединяйтесь</b>
-
-            <ul class="footer-flex">
+            <ul class="direction">
               <li>
                 <a href="" aria-label="Ссылка на Instagram" class="social-link"
                   >Instagram</a
@@ -446,8 +440,10 @@
               </li>
             </ul>
           </div>
+          <div>
+            <b class="invoke">подпишитесь на рассылку</b>
+          </div>
         </div>
-
         <p class="autor">2020| Developed by GoIT Students</p>
       </div>
     </footer>
